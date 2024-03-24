@@ -3,11 +3,8 @@ import triton
 import triton.language as tl
 from typing import Any, Callable, Dict, List, Optional, Tuple, Union
 
-## temp
 import transformer_engine_extensions as tex
 
-
-# 일단 seq_len dim으로 쪼갬
 @triton.jit
 def rope_kernel_forward(t_ptr, 
                 freqs_ptr, 

@@ -3,7 +3,6 @@ import torch
 import os
 import triton
 
-# os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
 
 from typing import Callable, Dict, Tuple, Union
 from transformer_engine.pytorch.attention import (
