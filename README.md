@@ -1,4 +1,4 @@
-# Rotary Position Embedding | Rihae Park
+# Rotary Position Embedding
 
 ## Dependencies
 - cuda 11.8
@@ -127,7 +127,7 @@ python test_ours.py # Performance Measure
         -  R.T이기 때문에 sin의 부호만 바뀌었다.
 
 ### 1. Functionality Check
-- `pytest test_ours.py` 실행 결과는 다음과 같다.
+- result of running `pytest test_ours.py`:
 ```
 =================================================== test session starts ====================================================
 platform linux -- Python 3.10.13, pytest-8.1.1, pluggy-1.4.0
@@ -148,7 +148,7 @@ test_ours.py ...................................................................
 ### 2. Performance Measure
 - seq_len = {1024, 2048, 4096, 8192}에 대해서 실험했다. 
 - seq_len에 따라 linear하게 소요 시간이 증가하는 것을 볼 수 있다. 이는 같은 triton kernel을 seq_len * batch_size * head_num 개 실행되기 때문이다.
-- `python test_ours.py` 실행 시 output은 아래와 같으며, CUDA 버전보다 약 1.5배 정도의 시간을 소요한다.
+- result of running `python test_ours.py`:
 
 rope-performance:
 | | seq_len|    Triton|      CUDA|
