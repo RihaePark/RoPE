@@ -17,7 +17,7 @@
 ```bash
 conda env create -n rope -f env.yaml
 conda activate rope
-pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu118
+pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu121
 git clone --branch stable --recursive https://github.com/NVIDIA/TransformerEngine.git
 cd TransformerEngine
 export NVTE_FRAMEWORK=pytorch
