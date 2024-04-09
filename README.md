@@ -1,7 +1,7 @@
 # Rotary Position Embedding
 
 ## Dependencies
-- cuda 11.8
+- cuda 12.1
 - cudnn 8.9.7
 
 ## Initial directory tree
